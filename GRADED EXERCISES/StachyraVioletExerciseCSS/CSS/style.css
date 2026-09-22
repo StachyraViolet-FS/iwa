@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", "Times New Roman", Times, serif;
+  text-align: left;
+  line-height: 1.5;
+  font-weight: normal;
+  font-size: 1.3rem;
+  background-color: #efe4d2;
+  border: #131d4f;
+  border-style: dotted dashed dotted dashed;
+  border-width: 0.5rem;
+  margin: 0rem;
+}
+
+#wrapper {
+  width: 90%;
+  margin: auto;
+  padding: 1.25rem;
+}
+
+/*Headings*/
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+  padding-bottom: 1rem;
+}
+
+h1 {
+  font-family: "Libertinus Keyboard", "Times New Roman", Times, serif;
+  text-align: center;
+  color: #131d4f;
+  background-color: #954c2e;
+  text-shadow: 0.17rem 0.17rem #254d70;
+  /* width: 30%; */
+  padding: 1rem;
+  border-color: #254d70;
+  border-width: 0.25rem;
+  border-style: outset;
+  margin: 3rem;
+  box-shadow: 0.17rem 0.17rem #254d70;
+  border-radius: 1rem;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: flex-start;
+}
+
+h2 {
+  font-family: "Fascinate Inline", "Times New Roman", Times, serif;
+  text-align: center;
+  font-size: 2rem;
+  color: #131d4f;
+}
+
+h3 {
+  font-family: "Limelight", "Times New Roman", Times, serif;
+  text-align: center;
+  color: #131d4f;
+}
+
+p {
+  line-height: 1.25;
+  color: #131d4f;
+  line-height: 2rem;
+}
+
+/*Links*/
+
+a {
+  font-family: "Limelight", "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-style: oblique;
+  font-size: 2rem;
+  text-decoration: none;
+  color: #254d70;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #954c2e;
+}
+
+/*Lists*/
+
+ul {
+  list-style: none;
+  /* border: 4px solid #954c2e; */
+  display: flex;
+  padding: 0rem;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  /* flex-wrap: wrap; */
+  gap: 2rem;
+}
+
+li {
+  display: inline;
+  border: 0.25rem outset #131d4f;
+  background-color: #131d4f;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/*Framed it like a piece of art, because it is.*/
+
+/*Images*/
+
+img {
+  border-style: double;
+  border-width: 1.5rem;
+  border-color: #954c2e;
+  margin: auto;
+  display: block;
+}
+
+/*Fonts used in the Google Fonts codetype; Type used that works is the W3 Schools method. Keeping these bits for catalouging purposes. I used so many because it's in the spirit of the topic of the page, collages. I made sure to use a highly readable font for the body just in case. EDIT: opened these back up to fix validation issue*/
+
+.libertinus-keyboard-regular {
+  font-family: "Libertinus Keyboard", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.fascinate-inline-regular {
+  font-family: "Fascinate Inline", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.limelight-regular {
+  font-family: "Limelight", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* <weight>: Use a value from 300 to 800
+ <uniquifier>: Use a unique and descriptive class name */
+
+/* .open-sans-<uniquifier > {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+
