@@ -11,6 +11,9 @@ body {
   font-weight: normal;
   font-size: 1.3rem;
   background-color: #efe4d2;
+  background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  /*^ wanted the page to have a subtle paper feel since it ties into the collage theme. Sourced from https://www.transparenttextures.com/*/
   border: #131d4f;
   border-style: dotted dashed dotted dashed;
   border-width: 0.5rem;
@@ -123,6 +126,65 @@ img {
   display: block;
 }
 
+/* Forms Styles */
+form {
+  border: 0.25rem ridge #131d4f;
+  padding: 1rem;
+  background-color: #efe4d2;
+}
+
+form > div {
+  margin-bottom: 0.5rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+input,
+textarea {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.25rem;
+  font-size: inherit;
+  border: 0.25rem solid #954c2e;
+}
+
+input[type="checkbox"] {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+}
+
+#form-check > label {
+  display: inline-block;
+}
+
+input[type="number"] {
+  width: 15%;
+}
+
+textarea {
+  font-family: inherit;
+}
+
+button[type="submit"] {
+  background-color: #131d4f;
+  color: #efe4d2;
+  border: dotted #254d70;
+  margin-top: 1rem;
+  padding: 0.375rem 2rem;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #254d70;
+  border: dotted #131d4f;
+}
 /*Fonts used in the Google Fonts codetype; Type used that works is the W3 Schools method. Keeping these bits for catalouging purposes. I used so many because it's in the spirit of the topic of the page, collages. I made sure to use a highly readable font for the body just in case. EDIT: opened these back up to fix validation issue*/
 
 .libertinus-keyboard-regular {

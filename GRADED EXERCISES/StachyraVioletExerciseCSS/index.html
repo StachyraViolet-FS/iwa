@@ -13,6 +13,18 @@
     <!--Fonts, THEN stylesheet-->
     <link rel="stylesheet" href="css/style.css" />
     <title>Collage</title>
+    <!-- <style>
+      /* Light Brown Pointer - https://www.cursors-4u.com/cursor/light-brown-pointer */
+      * {
+        cursor:
+          url("https://cdn.cursors-4u.net/previews/light-brown-pointer-840938a3-32.webp")
+            41 38,
+          auto !important;
+      }
+      /* End www.Cursors-4U.com Code */
+      /*Sourced from https://old.cursors-4u.com/ but realized it would mess with the pointer code over the button so I axed it. Keeping it here because I want to add it back when I add this coding example to my personal site.*/
+    </style> 
+    -->
   </head>
   <body>
     <div id="wrapper">
@@ -132,27 +144,36 @@
             collage painting was fair use.[33]
           </p>
         </section>
-        <section>
+        <section id="contact">
           <h2 id="contact">Contact</h2>
           <form>
             <div>
-              <label for="fname">First name</label>
-              <input type="text" id="fname" />
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" required min="1" maxlength="30" />
             </div>
             <div>
-              <label for="lname">Last name</label>
-              <input type="text" id="lname" />
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" required min="1" maxlength="30" />
             </div>
             <div>
               <label for="email">Email</label>
-              <input type="email" id="email" />
+              <input type="email" id="email" required />
+            </div>
+            <div id="form-check">
+              <input type="checkbox" id="stay" />
+              <label for="stay">Stay Tuned For Mailing List!</label>
             </div>
             <div>
               <label for="age">Age</label>
-              <input type="number" id="age" />
+              <input type="number" id="age" min="13" max="100" />
               <div>
                 <label for="message">Message</label>
-                <textarea id="message" cols="30" aria-rowspan="10"></textarea>
+                <textarea
+                  id="message"
+                  cols="30"
+                  aria-rowspan="10"
+                  required
+                ></textarea>
                 <button type="submit">Send</button>
               </div>
             </div>
@@ -169,7 +190,6 @@
             >Source</a
           >
         </p>
-
         <p>
           <a href="https://jigsaw.w3.org/css-validator/check/referer">
             <img
@@ -181,6 +201,7 @@
         </p>
       </footer>
     </div>
+    <script src="CSS/js/main.js"></script>
   </body>
 </html>
 
@@ -189,7 +210,7 @@
         <form>
           <div>
             <label for="username">Username</label>
-            <input type="text" id="username" />
+            <input type="text" id="username" required/>
           </div>
           <div>
             <label for="password">Password</label>
