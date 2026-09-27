@@ -29,7 +29,7 @@ header {
   flex-direction: row;
   align-items: stretch;
   /* flex-wrap: wrap; */
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding-bottom: 1rem;
 }
 
@@ -44,14 +44,14 @@ h1 {
   border-color: #254d70;
   border-width: 0.25rem;
   border-style: outset;
-  margin: 3rem;
+  margin: 5rem;
   box-shadow: 0.17rem 0.17rem #254d70;
   border-radius: 1rem;
   margin: auto;
   display: flex;
   flex-direction: row;
   align-items: start;
-  justify-content: flex-start;
+  justify-content: space-evenly;
 }
 
 h2 {
@@ -93,7 +93,7 @@ a:hover {
 
 ul {
   list-style: none;
-  /* border: 4px solid #954c2e; */
+  /* border: 1rem double #954c2e; */
   display: flex;
   padding: 0rem;
   flex-direction: row;
@@ -154,4 +154,4 @@ img {
   font-variation-settings: "wdth" 100;
 }
 
-
+*/

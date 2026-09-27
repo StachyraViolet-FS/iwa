@@ -23,6 +23,7 @@
             <li><a href="#history"> History</a></li>
             <li><a href="#inothercontexts">In Other Contexts</a></li>
             <li><a href="#legalissues">Legal Issues</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </header>
@@ -31,7 +32,6 @@
         src="Images/DasUndbild.jpg"
         alt="A brown, blue, and white collage."
       />
-
       <main>
         <!--Introductory section-->
         <section>
@@ -132,8 +132,35 @@
             collage painting was fair use.[33]
           </p>
         </section>
+        <section>
+          <h2 id="contact">Contact</h2>
+          <form>
+            <div>
+              <label for="fname">First name</label>
+              <input type="text" id="fname" />
+            </div>
+            <div>
+              <label for="lname">Last name</label>
+              <input type="text" id="lname" />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input type="email" id="email" />
+            </div>
+            <div>
+              <label for="age">Age</label>
+              <input type="number" id="age" />
+              <div>
+                <label for="message">Message</label>
+                <textarea id="message" cols="30" aria-rowspan="10"></textarea>
+                <button type="submit">Send</button>
+              </div>
+            </div>
+          </form>
+        </section>
       </main>
       <footer>
+        <!--END LINKS-->
         <p>
           <a
             href="https://en.wikipedia.org/wiki/Collage"
@@ -156,3 +183,22 @@
     </div>
   </body>
 </html>
+
+<!--
+        FORM EXAMPLES
+        <form>
+          <div>
+            <label for="username">Username</label>
+            <input type="text" id="username" />
+          </div>
+          <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" />
+          </div>
+          <div>
+            <input type="checkbox" id="stay" />
+            <label for="stay">Stay Logged In</label>
+          </div>
+          <button type="submit">Login</button>
+        </form>
+        -->
